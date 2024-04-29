@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-2 sticky top-0 w-full md:static bg-white md:py-5 px-3 md:px-10 lg:px-16 `}
+      className={`py-2 sticky z-10 top-0 w-full md:static bg-white md:py-5 px-3 md:px-10 lg:px-16 `}
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-center gap-x-24 md:gap-x-14">
@@ -58,7 +58,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center justify-center text-3xl gap-x-4 lg:gap-x-9">
-          <div className="hidden md:flex text-xl items-center gap-x-4 ">
+          <div className="hidden md:flex text-xl items-center gap-x-6 ">
             <div className="cursor-pointer text-2xl">
               <IoSearch></IoSearch>
             </div>

@@ -94,7 +94,7 @@ const MobileNav = () => {
             <option value="$ EURO">$ EURO</option>
           </select>
         </div>
-        <div className="flex mt-3 gap-x-7 cursor-pointer pb-3">
+        <div className="flex mt-3 gap-x-7 cursor-pointer">
           <FaFacebookF></FaFacebookF>
           <FaInstagram></FaInstagram>
           <FaPinterestP></FaPinterestP>
