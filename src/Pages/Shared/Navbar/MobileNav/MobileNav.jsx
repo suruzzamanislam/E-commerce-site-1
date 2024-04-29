@@ -6,7 +6,7 @@ import { FaPinterestP } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import { useContext } from 'react';
-import { AllContext } from '../../AllProviders/AllProvider';
+import { AllContext } from '../../../../AllProviders/AllProvider';
 
 const MobileNav = () => {
   const { isOpen, setOpen } = useContext(AllContext);
@@ -45,7 +45,7 @@ const MobileNav = () => {
   );
   return (
     <div
-      className={`py-2 text-white md:py-5 px-3 md:px-10 lg:px-16  absolute left-0 top-16 bg-white border-t-2 z-10 w-full h-[90vh] ${
+      className={`py-2 md:hidden text-white md:py-5 px-3 md:px-10 lg:px-16  fixed left-0 top-16 bg-white border-t-2 z-10 w-full h-[92vh] ${
         isOpen ? 'mobile_menu_down' : 'mobile_menu_up'
       }`}
     >

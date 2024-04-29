@@ -10,11 +10,17 @@ import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import Hamburger from 'hamburger-react';
 import './styleNav.css';
 import { useContext } from 'react';
-import { AllContext } from '../../AllProviders/AllProvider';
-import MobileNav from './MobileNav';
+import { AllContext } from '../../../AllProviders/AllProvider';
+import MobileNav from './MobileNav/MobileNav';
+import CartBag from './CartBag/CartBag';
 
 const Navbar = () => {
-  const { isOpen, setOpen } = useContext(AllContext);
+  const { isOpen, setOpen, openBag, setOpenBag } = useContext(AllContext);
+
+  const cartBtn = () => {
+    setOpenBag(!openBag);
+    setOpen(false);
+  };
 
   const links = (
     <>
@@ -37,11 +43,13 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="py-2 bg-white md:py-5 px-3 md:px-10 lg:px-16">
+    <nav
+      className={`py-2 fixed w-full md:static bg-white md:py-5 px-3 md:px-10 lg:px-16 `}
+    >
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-center gap-x-24 md:gap-x-14">
           {/* mobile menu icon */}
-          <div className="md:hidden">
+          <div onClick={() => setOpenBag(true)} className="md:hidden">
             <Hamburger toggled={isOpen} toggle={setOpen}></Hamburger>
           </div>
           <div>
@@ -63,7 +71,7 @@ const Navbar = () => {
               <FaRegHeart></FaRegHeart>
             </div>
           </div>
-          <div className="relative cursor-pointer">
+          <div onClick={cartBtn} className="relative cursor-pointer">
             <HiOutlineShoppingBag></HiOutlineShoppingBag>
             <div className="text-xs bg-yellow-500 absolute w-4 h-4 rounded-full flex justify-center items-center -bottom-1 -right-1 ">
               3
@@ -73,6 +81,8 @@ const Navbar = () => {
       </div>
       {/* mobile nav */}
       <MobileNav></MobileNav>
+      {/* cartBag */}
+      <CartBag></CartBag>
     </nav>
   );
 };

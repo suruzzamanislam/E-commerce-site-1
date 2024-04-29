@@ -45,3 +45,32 @@ li:hover::after {
   transition: 0.3s;
   transition-timing-function: ease-in-out;
 }
+/* CartBag */
+#bag_move_btn {
+  clip-path: polygon(46% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%);
+}
+#scroll-cart {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 70px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 70px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+.hidden_cart {
+  display: none;
+}
