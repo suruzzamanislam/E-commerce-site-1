@@ -51,7 +51,7 @@ const Navbar = () => {
             <Hamburger toggled={isOpen} toggle={setOpen}></Hamburger>
           </div>
           <div>
-            <img src={logo} alt="" />
+            <img className="cursor-pointer" src={logo} alt="" />
           </div>
           <ul className="hidden md:flex items-center text-lg gap-x-5 ">
             {links}

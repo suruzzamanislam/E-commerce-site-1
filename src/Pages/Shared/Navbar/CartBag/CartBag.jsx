@@ -199,7 +199,7 @@ const CartBag = () => {
       <div
         onClick={() => setOpenBag(!openBag)}
         id="bag_move_btn"
-        className="bg-gray-400 absolute -left-12 top-16 lg:top-6 text-2xl flex w-12 h-9 pr-1 items-center text-white justify-end cursor-pointer transition-all duration-100  "
+        className="bg-gray-400 absolute -left-12 top-16 lg:top-9 text-2xl flex w-12 h-9 pr-1 items-center text-white justify-end cursor-pointer transition-all duration-100  "
       >
         <BsXCircle className="hover:animate-spin"></BsXCircle>
       </div>
