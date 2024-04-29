@@ -11,8 +11,6 @@ import Hamburger from 'hamburger-react';
 import './styleNav.css';
 import { useContext } from 'react';
 import { AllContext } from '../../../AllProviders/AllProvider';
-import MobileNav from './MobileNav/MobileNav';
-import CartBag from './CartBag/CartBag';
 
 const Navbar = () => {
   const { isOpen, setOpen, openBag, setOpenBag } = useContext(AllContext);
@@ -44,7 +42,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-2 fixed w-full md:static bg-white md:py-5 px-3 md:px-10 lg:px-16 `}
+      className={`py-2 sticky top-0 w-full md:static bg-white md:py-5 px-3 md:px-10 lg:px-16 `}
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-center gap-x-24 md:gap-x-14">
@@ -74,15 +72,11 @@ const Navbar = () => {
           <div onClick={cartBtn} className="relative cursor-pointer">
             <HiOutlineShoppingBag></HiOutlineShoppingBag>
             <div className="text-xs bg-yellow-500 absolute w-4 h-4 rounded-full flex justify-center items-center -bottom-1 -right-1 ">
-              3
+              4
             </div>
           </div>
         </div>
       </div>
-      {/* mobile nav */}
-      <MobileNav></MobileNav>
-      {/* cartBag */}
-      <CartBag></CartBag>
     </nav>
   );
 };

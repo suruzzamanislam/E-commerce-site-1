@@ -45,7 +45,7 @@ const MobileNav = () => {
   );
   return (
     <div
-      className={`py-2 md:hidden text-white md:py-5 px-3 md:px-10 lg:px-16  fixed left-0 top-16 bg-white border-t-2 z-10 w-full h-[92vh] ${
+      className={`py-2 md:hidden text-white md:py-5 px-3 md:px-10 lg:px-16  fixed left-0 top-16 bg-white  border-t-2 z-50 w-full h-[93vh] ${
         isOpen ? 'mobile_menu_down' : 'mobile_menu_up'
       }`}
     >
@@ -94,7 +94,7 @@ const MobileNav = () => {
             <option value="$ EURO">$ EURO</option>
           </select>
         </div>
-        <div className="flex mt-3 gap-x-7 cursor-pointer">
+        <div className="flex mt-3 gap-x-7 cursor-pointer pb-3">
           <FaFacebookF></FaFacebookF>
           <FaInstagram></FaInstagram>
           <FaPinterestP></FaPinterestP>
