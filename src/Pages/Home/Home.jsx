@@ -6,6 +6,7 @@ import StartIng from './StartIng/StartIng';
 import Services from './Services/Services';
 import Galleray from './Gallery/Galleray';
 import Offer from './Offer/Offer';
+import TrendProducts from './TrendProducts/TrendProducts';
 
 const Home = () => {
   return (
@@ -14,6 +15,8 @@ const Home = () => {
       <Banner></Banner>
       {/* hot list */}
       <HotList></HotList>
+      {/* trend prodects */}
+      <TrendProducts></TrendProducts>
       {/* offer */}
       <Offer></Offer>
       {/* starting section */}

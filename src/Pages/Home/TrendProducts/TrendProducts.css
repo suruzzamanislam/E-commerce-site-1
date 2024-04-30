@@ -1,0 +1,63 @@
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all;
+  transition-duration: 0.1s;
+}
+.add_cart {
+  transform: scaleY(0);
+  transform-origin: bottom;
+  bottom: 0;
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.box:hover .add_cart {
+  transform: scaleY(1);
+  bottom: 20px;
+  transition: all;
+  transition-duration: 0.2s;
+}
+.box:hover .img2,
+.add_cart {
+  z-index: 1;
+  transition: all;
+  transition-duration: 0.1s;
+}
+
+/* hover underline */
+.btn-active::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: #222222;
+  z-index: 10;
+}
+
+.t-btn {
+  position: relative;
+  cursor: pointer;
+  color: grey;
+}
+.t-btn::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: #222222;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform-origin: left;
+  border-radius: 20px;
+}
+.t-btn:hover::after {
+  transform: scaleX(1);
+}
