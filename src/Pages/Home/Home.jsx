@@ -7,10 +7,11 @@ import Services from './Services/Services';
 import Galleray from './Gallery/Galleray';
 import Offer from './Offer/Offer';
 import TrendProducts from './TrendProducts/TrendProducts';
+import LimitedEdition from './LimitedEdition/LimitedEdition';
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       {/* slider */}
       <Banner></Banner>
       {/* hot list */}
@@ -21,6 +22,8 @@ const Home = () => {
       <Offer></Offer>
       {/* starting section */}
       <StartIng></StartIng>
+      {/* limited edition */}
+      <LimitedEdition></LimitedEdition>
       {/* galleray */}
       <Galleray></Galleray>
       {/* services */}
