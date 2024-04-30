@@ -5,6 +5,7 @@ import HotList from './HotList/HotList';
 import StartIng from './StartIng/StartIng';
 import Services from './Services/Services';
 import Galleray from './Gallery/Galleray';
+import Offer from './Offer/Offer';
 
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
       <Banner></Banner>
       {/* hot list */}
       <HotList></HotList>
+      {/* offer */}
+      <Offer></Offer>
       {/* starting section */}
       <StartIng></StartIng>
       {/* galleray */}
