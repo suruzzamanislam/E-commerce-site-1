@@ -1,0 +1,14 @@
+.g-img {
+  transform: rotate(5deg);
+  transition-timing-function: ease-in-out;
+  transition: all;
+  transition-duration: 0.4s;
+}
+.g-img:hover {
+  transform: rotate(0deg);
+  transform: scale(1.5);
+  transition-timing-function: ease-in-out;
+  transition: all;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}

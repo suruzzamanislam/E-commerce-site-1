@@ -1,5 +1,5 @@
-import './Banner2.css';
-const Banner2 = () => {
+import './HotList.css';
+const HotList = () => {
   return (
     <div className="mt-10 md:mt-24 mb-5 md:mb-16 px-3 md:px-10 lg:px-16">
       <div className="flex flex-col lg:flex-row w-full gap-y-4 lg:gap-y-0 lg:gap-x-6">
@@ -50,4 +50,4 @@ const Banner2 = () => {
   );
 };
 
-export default Banner2;
+export default HotList;

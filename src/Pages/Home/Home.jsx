@@ -1,15 +1,24 @@
 import MobileNav from '../Shared/Navbar/MobileNav/MobileNav';
 import CartBag from '../Shared/Navbar/CartBag/CartBag';
 import Banner from './Banner/Banner';
-import Banner2 from './Banner2/Banner2';
+import HotList from './HotList/HotList';
+import StartIng from './StartIng/StartIng';
+import Services from './Services/Services';
+import Galleray from './Gallery/Galleray';
 
 const Home = () => {
   return (
     <div>
       {/* slider */}
       <Banner></Banner>
-      {/* slider down */}
-      <Banner2></Banner2>
+      {/* hot list */}
+      <HotList></HotList>
+      {/* starting section */}
+      <StartIng></StartIng>
+      {/* galleray */}
+      <Galleray></Galleray>
+      {/* services */}
+      <Services></Services>
       {/* Mobile Nav */}
       <MobileNav></MobileNav>
       {/* Cart Bag */}
