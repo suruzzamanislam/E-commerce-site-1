@@ -13,7 +13,8 @@ import { useContext } from 'react';
 import { AllContext } from '../../../AllProviders/AllProvider';
 
 const Navbar = () => {
-  const { isOpen, setOpen, openBag, setOpenBag } = useContext(AllContext);
+  const { isOpen, setOpen, openBag, setOpenBag, search, setSearch } =
+    useContext(AllContext);
 
   const cartBtn = () => {
     setOpenBag(!openBag);
@@ -59,8 +60,20 @@ const Navbar = () => {
         </div>
         <div className="flex items-center justify-center text-3xl gap-x-4 lg:gap-x-9">
           <div className="hidden md:flex text-xl items-center gap-x-6 ">
-            <div className="cursor-pointer text-2xl">
-              <IoSearch></IoSearch>
+            <div className="cursor-pointer text-2xl relative">
+              <IoSearch
+                onClick={() => setSearch(!search)}
+                className="relative z-50 search"
+              ></IoSearch>
+              <input
+                className={`absolute duration-300 transition-all origin-right border border-black focus:outline-none -top-1 right-7  rounded-lg pl-2 text-sm py-2 placeholder:text-sm ${
+                  search ? 'scale-x-0' : 'scale-x-100'
+                }`}
+                placeholder="Search Products"
+                type="text"
+                name=""
+                id="search_input"
+              />
             </div>
             <div className="cursor-pointer">
               <FaRegUser></FaRegUser>

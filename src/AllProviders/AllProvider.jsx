@@ -9,6 +9,7 @@ const AllProvider = ({ children }) => {
   const [cartTwoHidden, setCartTwoHidden] = useState(false);
   const [cartThreeHidden, setCartThreeHidden] = useState(false);
   const [cartFourHidden, setCartFourHidden] = useState(false);
+  const [search, setSearch] = useState(true);
 
   const providerInfo = {
     isOpen,
@@ -23,6 +24,8 @@ const AllProvider = ({ children }) => {
     setCartThreeHidden,
     cartFourHidden,
     setCartFourHidden,
+    search,
+    setSearch,
   };
   return (
     <AllContext.Provider value={providerInfo}>{children}</AllContext.Provider>

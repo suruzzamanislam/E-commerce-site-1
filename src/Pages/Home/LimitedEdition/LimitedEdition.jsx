@@ -7,6 +7,8 @@ import 'swiper/css/pagination';
 import { Pagination, Autoplay } from 'swiper/modules';
 import { FaRegHeart } from 'react-icons/fa';
 
+import './LimitedEdditon.css';
+
 import img1 from '../../../assets/img/product-0-1.jpg';
 import img2 from '../../../assets/img/product-1-1.jpg';
 import img3 from '../../../assets/img/product-2-1.jpg';

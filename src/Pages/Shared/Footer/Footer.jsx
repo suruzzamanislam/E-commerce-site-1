@@ -7,7 +7,7 @@ import logo from '../../../assets/img/logo.png';
 import payment from '../../../assets/img/payment-options.png';
 const Footer = () => {
   return (
-    <div className="px-3 md:px-10 lg:px-16 py-10 bg-[#e4e4e4]">
+    <div className="px-3 md:px-10 lg:px-16 pt-10 pb-5 bg-[#e4e4e4]">
       <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-y-0 md:gap-x-3 ">
         <div>
           <img className="mb-10" src={logo} alt="" />
@@ -109,6 +109,44 @@ const Footer = () => {
               <p>Secure payments</p>
               <img src={payment} alt="" />
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row border-t-2 border-gray-500 pt-4 mt-3 justify-between md:items-center">
+        <p>©2024 Uomo</p>
+        <div className="flex flex-col md:flex-row  md:items-center gap-x-6">
+          <div>
+            <label htmlFor="lan" className="text-gray-700 font-medium">
+              Language
+            </label>
+            <select
+              className="border-4 border-gray-300 px-2 ml-2 text-gray-700 cursor-pointer focus:outline-none"
+              name=""
+              id="lan"
+            >
+              <option value="United Kingdom | English">
+                United Kingdom | English
+              </option>
+              <option value="German">German</option>
+              <option value="French">French</option>
+              <option value="United States | English">
+                United States | English
+              </option>
+            </select>
+          </div>
+          <div className="">
+            <label htmlFor="lan" className="text-gray-700 font-medium">
+              Currency
+            </label>
+            <select
+              className="border-4 border-gray-300 px-2 ml-2 text-gray-700 cursor-pointer focus:outline-none"
+              name=""
+              id="lan"
+            >
+              <option value="$ USD">$ USD</option>
+              <option value="$ GBP">$ GBP</option>
+              <option value="$ EURO">$ EURO</option>
+            </select>
           </div>
         </div>
       </div>

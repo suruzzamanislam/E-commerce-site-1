@@ -62,7 +62,7 @@ li:hover::after {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: #999;
+    background: orange;
     border-radius: 70px;
   }
 

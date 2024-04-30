@@ -65,7 +65,7 @@ const CartBag = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col font-medium justify-between pr-3">
+          <div className="flex flex-col font-medium justify-between md:pr-3">
             <HiMiniXMark
               onClick={() => setCartHidden(true)}
               className="cursor-pointer"
@@ -101,7 +101,7 @@ const CartBag = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col font-medium justify-between pr-3">
+          <div className="flex flex-col font-medium justify-between md:pr-3">
             <HiMiniXMark
               onClick={() => setCartTwoHidden(true)}
               className="cursor-pointer"
@@ -137,7 +137,7 @@ const CartBag = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col font-medium justify-between pr-3">
+          <div className="flex flex-col font-medium justify-between md:pr-3">
             <HiMiniXMark
               onClick={() => setCartThreeHidden(true)}
               className="cursor-pointer"
@@ -173,7 +173,7 @@ const CartBag = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col font-medium justify-between pr-3">
+          <div className="flex flex-col font-medium justify-between md:pr-3">
             <HiMiniXMark
               onClick={() => setCartFourHidden(true)}
               className="cursor-pointer"
