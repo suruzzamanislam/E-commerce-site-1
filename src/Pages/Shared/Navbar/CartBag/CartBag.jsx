@@ -25,7 +25,7 @@ const CartBag = () => {
   const [cartThreeCount, setCartThreeCount] = useState(2);
   return (
     <div
-      className={`bg-gray-300 z-10 fixed top-0   w-3/4 md:w-2/4 lg:w-2/6 h-full transition-all duration-500 ${
+      className={`bg-gray-300 z-50 fixed top-0   w-3/4 md:w-2/4 lg:w-2/6 h-full transition-all duration-500 ${
         openBag ? '-right-full' : 'right-0'
       }`}
     >

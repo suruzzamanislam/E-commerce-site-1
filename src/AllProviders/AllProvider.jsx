@@ -5,6 +5,7 @@ export const AllContext = createContext(null);
 const AllProvider = ({ children }) => {
   const [isOpen, setOpen] = useState(false);
   const [openBag, setOpenBag] = useState(true);
+  const [openUserBag, setOpenUserBag] = useState(true);
   const [cartHidden, setCartHidden] = useState(false);
   const [cartTwoHidden, setCartTwoHidden] = useState(false);
   const [cartThreeHidden, setCartThreeHidden] = useState(false);
@@ -26,6 +27,8 @@ const AllProvider = ({ children }) => {
     setCartFourHidden,
     search,
     setSearch,
+    openUserBag,
+    setOpenUserBag,
   };
   return (
     <AllContext.Provider value={providerInfo}>{children}</AllContext.Provider>
