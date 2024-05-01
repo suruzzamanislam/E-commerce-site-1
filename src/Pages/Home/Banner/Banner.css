@@ -58,3 +58,21 @@
 .btn:hover::after {
   transform: scaleX(1);
 }
+/* swiper pagination */
+.swiper-pagination {
+  display: flex;
+  gap: 20px;
+}
+.swiper-pagination-bullets {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.swiper-pagination-bullet {
+  background-color: red !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #222222 !important;
+  outline: 1px solid #222222;
+  outline-offset: 10px;
+}
