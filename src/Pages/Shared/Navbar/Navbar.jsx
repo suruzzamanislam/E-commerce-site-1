@@ -12,8 +12,9 @@ import './styleNav.css';
 import { useContext } from 'react';
 import { AllContext } from '../../../AllProviders/AllProvider';
 import CartBag from './CartBag/CartBag';
-import UserBag from './UserBag/UserBag';
+import UserBag from './LoginBag/UserBag';
 import MobileNav from './MobileNav/MobileNav';
+import RegisterBag from './RegisterBag/RegisterBag';
 
 const Navbar = () => {
   const {
@@ -34,19 +35,19 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li>
+      <li className="link_item">
         <NavLink to="/">HOME</NavLink>
       </li>
-      <li>
+      <li className="link_item">
         <NavLink to="/shop">SHOP</NavLink>
       </li>
-      <li>
+      <li className="link_item">
         <NavLink to="/blog">BLOG</NavLink>
       </li>
-      <li>
+      <li className="link_item">
         <NavLink to="/about">ABOUT</NavLink>
       </li>
-      <li>
+      <li className="link_item">
         <NavLink to="/contact">CONTACT</NavLink>
       </li>
     </>
@@ -86,11 +87,9 @@ const Navbar = () => {
                 id="search_input"
               />
             </div>
-            <div className="cursor-pointer">
-              <FaRegUser
-                onClick={() => setOpenUserBag(!openUserBag)}
-              ></FaRegUser>
-            </div>
+          </div>
+          <div className="cursor-pointer text-xl">
+            <FaRegUser onClick={() => setOpenUserBag(!openUserBag)}></FaRegUser>
           </div>
           <NavLink to="/wishlist">
             <div className="cursor-pointer">
@@ -111,6 +110,8 @@ const Navbar = () => {
       <CartBag></CartBag>
       {/* UserBag */}
       <UserBag></UserBag>
+      {/* Register Bag */}
+      <RegisterBag></RegisterBag>
     </nav>
   );
 };

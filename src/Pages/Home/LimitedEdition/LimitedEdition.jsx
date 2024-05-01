@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 // import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { FaRegHeart } from 'react-icons/fa';
 
 import './LimitedEdditon.css';
@@ -24,11 +24,8 @@ const LimitedEdition = () => {
         slidesPerView={2}
         spaceBetween={5}
         loop={true}
-        pagination={{
-          clickable: true,
-        }}
         autoplay={{
-          delay: 2500,
+          delay: 1200,
           disableOnInteraction: false,
         }}
         breakpoints={{
@@ -45,7 +42,7 @@ const LimitedEdition = () => {
             spaceBetween: 15,
           },
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>

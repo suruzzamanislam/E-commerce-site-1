@@ -6,6 +6,7 @@ const AllProvider = ({ children }) => {
   const [isOpen, setOpen] = useState(false);
   const [openBag, setOpenBag] = useState(true);
   const [openUserBag, setOpenUserBag] = useState(true);
+  const [openRegisterBag, setOpenRegisterBag] = useState(true);
   const [cartHidden, setCartHidden] = useState(false);
   const [cartTwoHidden, setCartTwoHidden] = useState(false);
   const [cartThreeHidden, setCartThreeHidden] = useState(false);
@@ -29,6 +30,8 @@ const AllProvider = ({ children }) => {
     setSearch,
     openUserBag,
     setOpenUserBag,
+    openRegisterBag,
+    setOpenRegisterBag,
   };
   return (
     <AllContext.Provider value={providerInfo}>{children}</AllContext.Provider>
