@@ -1,17 +1,21 @@
-.s-banner {
-  background-image: url(../../assets/img/shop_banner1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
+.f-up {
+  position: absolute;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: all;
+  transition-duration: 0.3s;
 }
-.s-title {
-  background-image: linear-gradient(90deg, #ff00d2, #fed90f, #00a2ff, #09f1b8);
-  background-clip: text;
-  -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: calc(1em / 16);
-  -webkit-background-clip: text;
-
-  font-weight: 700;
-  padding: calc(calc(1em / 16) / 2);
-  letter-spacing: calc(1em / 8);
+.f-down {
+  position: relative;
+  transform-origin: top;
+  transform: scaleY(1);
+  transition: all;
+  transition-duration: 0.3s;
+}
+.c-outline {
+  outline: 2px solid black;
+  outline-offset: 5px;
+}
+.c-not-outline {
+  outline: 0;
 }

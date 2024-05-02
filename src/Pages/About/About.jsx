@@ -6,7 +6,7 @@ import { LuShieldCheck } from 'react-icons/lu';
 const About = () => {
   return (
     <div>
-      <h1 className="px-5 md:px-22 lg:px-60 text-3xl font-medium mb-9">
+      <h1 className="px-5 mt-6 md:px-22 lg:px-60 text-3xl font-medium mb-9">
         ABOUT UOMO
       </h1>
       <div className="mb-4 w-full">
