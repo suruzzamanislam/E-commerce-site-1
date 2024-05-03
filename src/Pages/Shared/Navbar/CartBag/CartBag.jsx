@@ -29,14 +29,15 @@ const CartBag = () => {
         openBag ? '-right-full' : 'right-0'
       }`}
     >
-      <div className="">
-        <p className="bg-white px-4 py-5 md:py-6 font-medium">
-          SHOPPING BAG ( 1 )
-        </p>
+      <div className="border-b border-gray-500 flex justify-between items-center px-4 py-5">
+        <p className="bg-gray-300  text-xl  md:py-5 font-medium">CART</p>
+        <div onClick={() => setOpenBag(!openBag)}>
+          <BsXCircle className="hover:animate-spin text-2xl cursor-pointer"></BsXCircle>
+        </div>
       </div>
 
       {/* cart */}
-      <div id="scroll-cart" className="ml-4  my-14 h-[390px] overflow-auto">
+      <div className="ml-4  my-14 h-[390px] overflow-auto scroll-cart">
         <div
           className={`flex justify-between border-b-2 pb-3 ${
             cartHidden && 'hidden_cart'
@@ -194,14 +195,6 @@ const CartBag = () => {
         <button className="w-full text-center py-3 bg-gray-600 mt-2 hover:bg-gray-700 transition-all duration-200 cursor-pointer text-white">
           Checkout
         </button>
-      </div>
-
-      <div
-        onClick={() => setOpenBag(!openBag)}
-        id="bag_move_btn"
-        className="bg-gray-400 absolute -left-12 top-16 lg:top-9 text-2xl flex w-12 h-9 pr-1 items-center text-white justify-end cursor-pointer transition-all duration-100  "
-      >
-        <BsXCircle className="hover:animate-spin"></BsXCircle>
       </div>
     </div>
   );

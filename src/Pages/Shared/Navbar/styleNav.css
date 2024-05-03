@@ -39,10 +39,8 @@ li:hover::after {
   transition-timing-function: ease-in-out;
 }
 /* CartBag */
-#bag_move_btn {
-  clip-path: polygon(46% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%);
-}
-#scroll-cart {
+
+.scroll-cart {
   &::-webkit-scrollbar {
     width: 5px;
   }

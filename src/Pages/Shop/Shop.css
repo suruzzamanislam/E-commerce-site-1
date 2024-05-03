@@ -19,3 +19,22 @@
 .c-not-outline {
   outline: 0;
 }
+.s-add_cart {
+  transform: scaleY(0);
+  transform-origin: bottom;
+  bottom: 20px;
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.s-box:hover .s-add_cart {
+  transform: scaleY(1);
+  bottom: 30px;
+  transition: all;
+  transition-duration: 0.2s;
+}
+.s-box:hover .s-add_cart {
+  z-index: 20;
+  transition: all;
+  transition-duration: 0.1s;
+}

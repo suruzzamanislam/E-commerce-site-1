@@ -16,10 +16,13 @@ const UserBag = () => {
         openRegisterBag ? '-right-full' : 'right-0'
       }`}
     >
-      <div className="">
-        <p className="bg-white text-xl px-4 py-5 md:py-5 font-medium">
+      <div className="border-b border-gray-500 flex justify-between items-center px-4 py-5">
+        <p className="bg-gray-300  text-xl  md:py-5 font-medium">
           CREATE AN ACCOUNT
         </p>
+        <div onClick={() => setOpenRegisterBag(!openRegisterBag)}>
+          <BsXCircle className="hover:animate-spin text-2xl cursor-pointer"></BsXCircle>
+        </div>
       </div>
 
       <div>
@@ -68,14 +71,6 @@ const UserBag = () => {
             login
           </span>
         </p>
-      </div>
-
-      <div
-        onClick={() => setOpenRegisterBag(!openRegisterBag)}
-        id="bag_move_btn"
-        className="bg-gray-400 absolute -left-12 top-16 lg:top-9 text-2xl flex w-12 h-9 pr-1 items-center text-white justify-end cursor-pointer transition-all duration-100  "
-      >
-        <BsXCircle className="hover:animate-spin"></BsXCircle>
       </div>
     </div>
   );
