@@ -23,7 +23,10 @@ const HotList = () => {
             </div>
           </div>
           <div className="flex flex-col-reverse md:flex-row gap-y-6 md:gap-y-0 md:gap-x-6">
-            <div className="div3 relative w-full h-[36vh] mt-1 bg-gradient-to-r from-purple-500 to-pink-500">
+            <div
+              data-aos="fade-up"
+              className="div3 relative w-full h-[36vh] mt-1 bg-gradient-to-r from-purple-500 to-pink-500"
+            >
               <div className="absolute bottom-9 left-8">
                 <p className="text-xl">HOT LIST</p>
                 <p className="text-2xl lg:text-[2vw] my-2 font-medium">
@@ -32,7 +35,10 @@ const HotList = () => {
                 <button className="btn text-lg">SHOP NOW</button>
               </div>
             </div>
-            <div className="div3 relative w-full h-[36vh] mt-1 bg-gradient-to-r from-cyan-500 to-blue-500">
+            <div
+              data-aos="fade-down"
+              className="div3 relative w-full h-[36vh] mt-1 bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
               <div className="absolute bottom-9 left-8">
                 <p className="text-2xl lg:text-[2vw] my-2 font-medium">
                   <span className="font-bold">E-GIFT </span> CARDS

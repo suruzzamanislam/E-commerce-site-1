@@ -48,7 +48,7 @@ const About = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-between gap-y-2 items-center gap-x-4 mt-10">
           <div className="md:w-1/2">
-            <img className="w-full" src={about1} alt="" />
+            <img data-aos="fade-right" className="w-full" src={about1} alt="" />
           </div>
           <div className="md:w-1/2">
             <p className="text-xl font-medium mb-3">The Company</p>

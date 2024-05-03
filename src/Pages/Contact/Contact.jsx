@@ -54,7 +54,10 @@ const Contact = () => {
               rows="8"
             ></textarea>
           </div>
-          <button className="text-xl md:mt-4 font-medium bg-slate-700 hover:bg-slate-800 duration-200 cursor-pointer text-white px-8 py-3">
+          <button
+            data-aos="fade-up"
+            className="text-xl md:mt-4 font-medium bg-slate-700 hover:bg-slate-800 duration-200 cursor-pointer text-white px-8 py-3"
+          >
             SUBMIT
           </button>
         </form>

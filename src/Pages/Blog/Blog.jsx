@@ -28,7 +28,12 @@ const Blog = () => {
       <div className="my-16 px-3 space-y-10 md:px-10 lg:px-16">
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div>
-            <img className="w-full h-full" src={blog1} alt="" />
+            <img
+              data-aos="fade-right"
+              className="w-full h-full"
+              src={blog1}
+              alt=""
+            />
           </div>
           <div>
             <p className="text-gray-500">BY ADMIN APRIAL 05, 2023</p>
@@ -44,7 +49,12 @@ const Blog = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div>
-            <img className="w-full h-full" src={blog2} alt="" />
+            <img
+              data-aos="fade-right"
+              className="w-full h-full"
+              src={blog2}
+              alt=""
+            />
           </div>
           <div>
             <p className="text-gray-500">BY ADMIN APRIAL 07, 2023</p>
@@ -60,7 +70,12 @@ const Blog = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-center">
           <div>
-            <img className="w-full h-full" src={blog3} alt="" />
+            <img
+              data-aos="fade-right"
+              className="w-full h-full"
+              src={blog3}
+              alt=""
+            />
           </div>
           <div>
             <p className="text-gray-500">BY ADMIN APRIAL 09, 2023</p>
