@@ -30,14 +30,14 @@ const CartBag = () => {
       }`}
     >
       <div className="border-b border-gray-500 flex justify-between items-center px-4 py-5">
-        <p className="bg-gray-300  text-xl  md:py-5 font-medium">CART</p>
+        <p className="bg-gray-300  text-xl   font-medium">CART</p>
         <div onClick={() => setOpenBag(!openBag)}>
           <BsXCircle className="hover:animate-spin text-2xl cursor-pointer"></BsXCircle>
         </div>
       </div>
 
       {/* cart */}
-      <div className="ml-4  my-14 h-[390px] overflow-auto scroll-cart">
+      <div className="ml-4  my-10 h-[390px] overflow-auto scroll-cart">
         <div
           className={`flex justify-between border-b-2 pb-3 ${
             cartHidden && 'hidden_cart'
